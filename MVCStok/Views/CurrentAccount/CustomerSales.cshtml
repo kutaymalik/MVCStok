@@ -1,0 +1,120 @@
+﻿@using MVCStok.Models.Entities
+@model List<SaleAct>
+
+@{
+    ViewBag.Title = "CustomerSales";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        background: linear-gradient(45deg, #49a09d, #5f2c82);
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    table {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        9 border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    th,
+    td {
+        padding: 15px;
+        background-color: rgba(255,255,255,0.2);
+        color: #fff;
+    }
+
+    th {
+        text-align: left;
+    }
+
+    thead {
+        th
+
+    {
+        background-color: #55608f;
+    }
+
+    }
+
+    tbody {
+        tr
+
+    {
+        &:hover
+
+    {
+        background-color: rgba(255,255,255,0.3);
+    }
+
+    }
+
+    td {
+        position: relative;
+        &:hover
+
+    {
+        &:before
+
+    {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255,255,255,0.2);
+        z-index: -1;
+    }
+
+    }
+    }
+    }
+</style>
+
+<table class="styled-table">
+    <tr>
+        <th>Satış ID</th>
+        <th>Ürün</th>
+        <th>Personel</th>
+        <th>Ürün Fiyatı</th>
+        <th>Adet</th>
+        <th>Toplam Fiyat</th>
+        <th>Tarih</th>
+        <th>Yazdır</th>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.SalesID</td>
+            <td>@x.ProductsList.ProductName</td>
+            <td>@x.PersonalList.PersonalName @x.PersonalList.PersonalLastname</td>
+            <td>@x.Product_Price</td>
+            <td>@x.Quantity</td>
+            <td>@x.Amount_Price</td>
+            <td>@x.Date</td>
+            <td><a href="#" class="btn btn-default" style="background-color:dodgerblue">Yazdır</a></td>
+        </tr>
+    }
+
+</table>

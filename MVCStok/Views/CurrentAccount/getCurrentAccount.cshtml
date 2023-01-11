@@ -1,0 +1,31 @@
+﻿@model MVCStok.Models.Entities.CurrentAccount
+
+@{
+    ViewBag.Title = "getCurrentAccount";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@using(Html.BeginForm("UpdateCurrentAccount", "CurrentAccount", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.HiddenFor(x => x.CurrentAccountID)
+    @Html.LabelFor(x => x.CurrentAccountName)
+    @Html.TextBoxFor(x => x.CurrentAccountName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountName, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountLastname)
+    @Html.TextBoxFor(x => x.CurrentAccountLastname, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountLastname, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountCity)
+    @Html.TextBoxFor(x => x.CurrentAccountCity, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountCity, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountMail)
+    @Html.TextBoxFor(x => x.CurrentAccountMail, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountMail, "", new { @style = "color:red" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+</div>
+}
+

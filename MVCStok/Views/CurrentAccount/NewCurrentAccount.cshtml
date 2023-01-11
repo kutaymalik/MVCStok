@@ -1,0 +1,26 @@
+﻿@model MVCStok.Models.Entities.CurrentAccount
+
+@{
+    ViewBag.Title = "NewCurrentAccount";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.CurrentAccountName)
+    @Html.TextBoxFor(x => x.CurrentAccountName, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountName, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountLastname)
+    @Html.TextBoxFor(x => x.CurrentAccountLastname, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountLastname, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountCity)
+    @Html.TextBoxFor(x => x.CurrentAccountCity, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountCity, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(x => x.CurrentAccountMail)
+    @Html.TextBoxFor(x => x.CurrentAccountMail, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CurrentAccountMail, "", new { @style = "color:red" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

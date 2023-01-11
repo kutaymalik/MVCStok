@@ -1,0 +1,25 @@
+﻿@model MVCStok.Models.Entities.Categories
+
+@{
+    ViewBag.Title = "getCategory";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<br />
+<h2>Kategori Güncelleme</h2>
+<br />
+
+@using (Html.BeginForm("UpdateCategory","Categories", FormMethod.Post))
+{
+
+    <div class="form-group">
+        @Html.LabelFor(x=>x.CategoryName)
+        @Html.TextBoxFor(x=>x.CategoryName, new { @class = "form-control" })
+        @Html.HiddenFor(x=>x.CategoryID)
+    </div>
+
+    <button class="btn btn-warning">Güncelle</button>
+
+}
+
+
