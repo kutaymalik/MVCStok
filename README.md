@@ -1,6 +1,6 @@
-# MVCStok (Trade automation project built with asp.net MVC)
+# MVC Stock (Trade automation project built with asp.net MVC)
 
-* The project was written in C# Asp.Net MVC environment using Entity Framework Code First, Bootstrap technologies. The project has only the Administrator user role.
+* The project is written with C# Asp.Net MVC architecture using Entity Framework Code First, Bootstrap technologies. The project has only the Administrator user role.
 
 ![model](https://user-images.githubusercontent.com/56682209/211857629-95806587-e7a0-4831-ac8d-79e33c8f6a22.png)
 Figure 1.1(Example of Code First Model)
