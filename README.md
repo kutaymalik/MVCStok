@@ -2,7 +2,7 @@
 
 * The project was written in C# Asp.Net MVC environment using Entity Framework Code First, Bootstrap technologies. The project has only the Administrator user role.
 
-![codefirst-model](https://user-images.githubusercontent.com/56682209/211809603-c3301e87-1c12-4711-9c59-a608e27a7861.png)
+![model](https://user-images.githubusercontent.com/56682209/211857629-95806587-e7a0-4831-ac8d-79e33c8f6a22.png)
 Figure 1.1(Example of Code First Model)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -12,7 +12,7 @@ Figure 1.1(Example of Code First Model)
 
 * CRUD actions such as Create, Edit, and Delete were performed with the ActionResult class in the C# System.Web.Mvc library.
 
-![controller](https://user-images.githubusercontent.com/56682209/211811403-3c17409c-d588-47af-8964-50cbc6db0ba8.jpg)
+![categories codes](https://user-images.githubusercontent.com/56682209/211857324-d3430357-a18d-4d55-b132-43eaca601343.png)
 Figure 1.2(Example of Controller Layer)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ Figure 1.2(Example of Controller Layer)
 
 * The ViewBag property in the System.Web.Mvc library was used to pass data from the Controller to the view.
 
-![VİEW](https://user-images.githubusercontent.com/56682209/211813835-fb3a220f-b489-446a-8314-c80a26320abd.jpg)
+![view](https://user-images.githubusercontent.com/56682209/211858431-74be0c73-312b-4133-a746-18f887d02ecf.png)
 Figure 1.3(Example of View Layer)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
