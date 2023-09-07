@@ -1,4 +1,4 @@
-# AĞ tABANLI TEKNOLOJİLER İÇİN PDF BELGESİ:
+# AĞ TABANLI TEKNOLOJİLER İÇİN PDF BELGESİ:
 [19290272_Kutay_Malik_Tatas_Ağ_Tabanlı_Proje_Sunumu.pdf](https://github.com/kutaymalik/MVCStok/files/10404623/19290272_Kutay_Malik_Tatas_Ag_Tabanli_Proje_Sunumu.pdf)
 
 # MVC Stock (Trade automation project built with asp.net MVC)
